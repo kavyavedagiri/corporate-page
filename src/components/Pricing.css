@@ -1,0 +1,52 @@
+.pricing__section {
+  padding: 180px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    background: #fafafa;
+  }
+  
+
+  
+  .pricing__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .pricing__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pricing__heading {
+    color: #1c2237;
+    margin-bottom: 24px;
+  }
+  
+  
+  @media screen and (max-width: 960px) {
+    .pricing__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    
+  
+    .pricing__wrapper {
+      margin: 0 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+ 

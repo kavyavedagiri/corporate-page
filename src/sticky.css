@@ -1,0 +1,19 @@
+
+.division1{
+    position: sticky;
+    /* height: 80px; */
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+    z-index:1;
+    
+}
+ .sticky{
+ position: fixed;
+z-index: -1;
+  
+    
+} 
