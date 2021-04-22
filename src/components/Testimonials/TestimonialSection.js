@@ -21,21 +21,28 @@ import  CardActionArea from '@material-ui/core/CardActionArea';
 import Paper from '@material-ui/core/Paper';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Divider from '@material-ui/core/Divider';
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 350,
+    maxWidth: 300,
 
-    minWidth: 280,
+    minWidth: 250,
     
     justifyContent:'center',
     alignItems:"center",
     textAlign:"center",
+    [theme.breakpoints.down('lg')]: {
+      maxWidth: 400,
+       minWidth:390,
+       },
     [theme.breakpoints.down('md')]: {
       maxWidth: 300,
        minWidth:250,
        },
     [theme.breakpoints.down('sm')]: {
-      maxWidth: 300,
+      maxWidth: 290,
        minWidth:250,
        },
   },
@@ -43,6 +50,12 @@ const useStyles = makeStyles((theme) => ({
     height: 0,
     paddingTop: '58.25%', // 16:9
     justifyContent:'center',
+  },
+  dividerFullWidth: {
+    margin: `5px 5px 0px 20%`,
+    backgroundColor:" rgb(240 9 81)",
+    width:"80%"
+    
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -66,24 +79,24 @@ const useStyles = makeStyles((theme) => ({
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
+    breakpoint: { max: 850, min: 700},
     items:3,
-    partialVisibilityGutter: 0
+    partialVisibilityGutter: -50
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    breakpoint: { max: 1999, min: 650 },
+    items: 2,
     partialVisibilityGutter:0
   },
   tablet: {
-    breakpoint:{ max: 1024, min: 650 },
+    breakpoint:{ max: 649, min: 450 },
     items: 2,
     partialVisibilityGutter: 0
   },
   mobile: {
-    breakpoint: { max: 700, min: 0 },
+    breakpoint: { max: 449, min: 0 },
     items: 1,
-    partialVisibilityGutter: 0
+    partialVisibilityGutter: -30
   }
 };
 
@@ -99,7 +112,13 @@ function TestimonialSection() {
       
         <div className='container'>
         <div class="headingT">Testimonial</div>
-        <div>
+        <div
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-out-sine"
+                >
+                <Divider className={classes.dividerFullWidth} />
+                </div>
        
       <Carousel
       responsive={responsive}
@@ -109,12 +128,12 @@ function TestimonialSection() {
       partialVisible={true}
       arrows={true}
       >
- <div>
- <div style={{margin:"60px"}} >
+ 
+ <div style={{margin:"70px"}} >
   <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
           
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -125,14 +144,14 @@ function TestimonialSection() {
           </CardActionArea>
     
     </Paper>
-</div>
+
   </div>
-  <div>
-   <div style={{margin:"60px"}} >
+  
+   <div style={{margin:"70px"}} >
   <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
           
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -144,13 +163,13 @@ function TestimonialSection() {
    
     </Paper>
     </div>
-  </div>
-  <div>
-  <div style={{margin:"60px"}} >
+ 
+
+  <div style={{margin:"70px"}} >
   <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
          
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -161,7 +180,7 @@ function TestimonialSection() {
           </CardActionArea>
     </Paper>
  </div>
-  </div>
+
   
  
   
@@ -171,7 +190,7 @@ function TestimonialSection() {
 </div>
 </div>
 </div>
-   </div>
+  
   )
 }
 

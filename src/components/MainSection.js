@@ -1,5 +1,16 @@
 import React from 'react';
 import './MainSection.css';
+import Divider from '@material-ui/core/Divider';
+import { makeStyles } from '@material-ui/core/styles';
+
+
+const useStyles = makeStyles((theme) => ({
+  dividerFullWidth: {
+    margin: `5px 0 15px ${theme.spacing(0)}px`,
+    backgroundColor:" rgb(240 9 81)",
+    
+  },
+}));
 
 
 
@@ -15,12 +26,14 @@ function MainSection({
   alt,
   imgStart
 }) {
+  const classes = useStyles();
+
   return (
     <>
-      <div
+      <div 
         className={lightBg ? 'home__main-section' : 'home__main-section darkBg'}
       >
-        <div className='container'>
+        <div data-aos="zoom-in-left" className='container'>
           <div
             className='row home__main-row'
             style={{
@@ -31,6 +44,16 @@ function MainSection({
             <div className='col'>
               <div className='home__main-text-wrapper'>
                 <div className='top-line'>{topLine}</div>
+
+                <div
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-out-sine"
+                >
+                <Divider className={classes.dividerFullWidth} />
+                </div>
+
+
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
                 </h1>

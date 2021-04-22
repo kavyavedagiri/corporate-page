@@ -72,7 +72,7 @@ function Pricing({
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
 
-<div style={{ margin:"20px"}}>
+<div  style={{ margin:"20px"}}>
                
                
              <Card className={classes.root} elevation={3} >

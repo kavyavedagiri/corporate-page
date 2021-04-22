@@ -1,9 +1,8 @@
- .react-multiple-carousel__arrow { 
-    right: 0 !important; 
-  
-  }
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + 1px)!important;
+}
   .react-multiple-carousel__arrow--left {
-    left: calc(0% + 1px)!important; 
+    left: calc(1% + 1px)!important; 
 } 
 .home__mainT-section {
     background-color: #f7f8fa;
@@ -67,6 +66,7 @@
     line-height: 1.1;
     font-weight: 600;
     color:#f7f8fa;
+    text-align: end;
   }
   .dark {
     color: #1c2237;

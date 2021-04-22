@@ -11,10 +11,12 @@ const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 370,
       minWidth: 200,
+      minHeight:300,
       padding:9,
       justifyContent:'center',
       alignItems:"center",
       textAlign:"center",
+      backgroundColor:"#dce0eb"
     },
     media: {
       height: 0,
@@ -46,7 +48,7 @@ function FeatureSection({
    subheader2_c,
    paragraph1_c,
    subParagraph1_c,
-   tag,FeatureInfo
+   tag,FeatureInfo,FeatureHeading
 }) {
     const classes = useStyles();
 
@@ -54,14 +56,14 @@ function FeatureSection({
     <>
     <IconContext.Provider value={{ color: '#fff', size: 32 }}>
        
-    <div style={{ margin:"10px"}}>
+    <div data-aos="zoom-in-down" style={{ margin:"10px"}}>
                
         
       <Paper className={classes.root} elevation={6} >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
-          <Typography variant="h6" >heading</Typography>
+      <img src="images/features/svg-7.svg" alt="title" width="150px" height="150px"/>
+        <Typography variant="h6" >{FeatureHeading}</Typography>
           <Typography className={classes.paragraph}>
            {FeatureInfo}
           </Typography>
