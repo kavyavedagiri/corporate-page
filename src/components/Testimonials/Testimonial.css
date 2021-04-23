@@ -19,7 +19,7 @@
   .alice-carousel {
     position: relative;
     width: 100%;
-    margin: auto;
+    margin-left: 16px;
     direction: ltr;
     transform: translate(20px, 10px);
 
