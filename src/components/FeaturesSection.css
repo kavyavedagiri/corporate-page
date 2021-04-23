@@ -1,7 +1,7 @@
 .home__mainf-section {
     background-color: #f7f8fa;
     color:#1c2237;
-    padding: 100px 10px 10px 10px;
+    padding: 80px 0px 40px 0px;
   }
   
   .home__mainf-row {
@@ -66,13 +66,13 @@
     line-height: 24px;
   }
   
-  @media screen and (max-width: 500px) {
+  /* @media screen and (max-width: 500px) {
     .container {
-      padding-right: 80px;
+      padding-right: 100px;
       padding-left: 30px;
     }
   }
-  
+  */
   @media screen and (max-width: 300px) {
     .home__mainf-text-wrapper {
       padding-bottom: 65px;
@@ -83,4 +83,4 @@
       flex-basis: 100%;
     }
   }
-  
+   

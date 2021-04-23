@@ -34,16 +34,16 @@ useEffect(()=>{
    </Router>
 <div class="outer">
         <Router>
-        <Home data-aos="fade-up"/>
-        <Features/>
-        <Testimonial/>
-        <Pricing />
-        <ContactUs />
-        <Footer/>
-        </Router>
-  <div class="box" id="one">
+     <Home/>    
+     <Features/>
+     <Testimonial/>    
+      <Pricing />  
+    <ContactUs />
+     <Footer/>   
+      </Router>
+ <div class="box" id="one">
   <VedioSection/>
- </div>
+ </div> 
 </div>
 
 

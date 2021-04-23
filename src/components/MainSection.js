@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   dividerFullWidth: {
-    margin: `5px 0 15px ${theme.spacing(0)}px`,
+    margin: `0px`,
     backgroundColor:" rgb(240 9 81)",
     
   },
@@ -33,7 +33,7 @@ function MainSection({
       <div 
         className={lightBg ? 'home__main-section' : 'home__main-section darkBg'}
       >
-        <div data-aos="zoom-in-left" className='container'>
+        <div   className='container'>
           <div
             className='row home__main-row'
             style={{
@@ -45,13 +45,13 @@ function MainSection({
               <div className='home__main-text-wrapper'>
                 <div className='top-line'>{topLine}</div>
 
-                <div
-                data-aos="fade-left"
-                data-aos-offset="300"
+              <div
+                data-aos="fade-right"
+                data-aos-offset="200"
                 data-aos-easing="ease-out-sine"
                 >
                 <Divider className={classes.dividerFullWidth} />
-                </div>
+                </div> 
 
 
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
@@ -81,4 +81,4 @@ function MainSection({
   );
 }
 
-export default MainSection;
+export default MainSection

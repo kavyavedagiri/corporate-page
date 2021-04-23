@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   dividerFullWidth: {
-    margin: `5px 0 15px ${theme.spacing(0)}px`,
+  margin: `5px 0 15px 0px`,
     backgroundColor:" rgb(240 9 81)",
     width: "80%",
     
