@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent:'center',
       alignItems:"center",
       textAlign:"center",
-      backgroundColor:"#dce0eb"
+      backgroundColor:"#cfd3e3"
     },
     media: {
       height: 0,
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign:"center",
       color:"#1c2237",
       fontStyle: 'italic',
-      fontSize:'12px'
+      fontSize:'16px'
     }
     
   }));
@@ -56,10 +56,10 @@ function FeatureSection({
     <>
     <IconContext.Provider value={{ color: '#fff', size: 32 }}>
        
-    <div data-aos="zoom-in-down" style={{ margin:"10px"}}>
-               
+    <div  style={{ margin:"10px"}}>
+                
         
-      <Paper className={classes.root} elevation={6} >
+      <Paper data-aos="zoom-in-down" className={classes.root} elevation={6} >
       <CardActionArea>
       <CardContent>   
       <img src="images/features/svg-7.svg" alt="title" width="150px" height="150px"/>

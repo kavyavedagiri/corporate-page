@@ -5,10 +5,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles((theme) => ({
-  dividerFullWidth: {
-    margin: `5px 10px 15px 5px`,
-    backgroundColor:" rgb(240 9 81)",
+ dividerFullWidth: {
     
+    backgroundColor:" rgb(240 9 81)",
+    width: "80%",
+    margin: `5px 10px 15px 0px;`,
+     [theme.breakpoints.down('md')]: {
+    margin: `5px 0px 15px 0px;`,
+    width: "100%",
+  },
   },
 }));
 
@@ -33,8 +38,8 @@ function MainSection({
       <div 
         className={lightBg ? 'home__main-section' : 'home__main-section darkBg'}
       >
-        <div   className='container'>
-          <div
+        <div   className='container' style={{overflow:"hidden"}}>
+          <div data-aos="zoom-in-down"
             className='row home__main-row'
             style={{
               display: 'flex',
@@ -45,18 +50,20 @@ function MainSection({
               <div className='home__main-text-wrapper'>
                 <div className='top-line'>{topLine}</div>
 
-              <div
+                <div
                 data-aos="fade-right"
-                data-aos-offset="200"
+                data-aos-offset="500"
                 data-aos-easing="ease-out-sine"
-                >
+                >  
                 <Divider className={classes.dividerFullWidth} />
-                </div> 
+                </div>
 
 
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
                 </h1>
+
+               
                 <p
                   className={
                     lightTextDesc

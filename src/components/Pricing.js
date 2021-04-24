@@ -21,11 +21,12 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 380,
       minWidth:320,
       backgroundColor:"#e8e8e8",
-      
+       color:"#1c2237",
       minHeight:200,
       [theme.breakpoints.down('sm')]: {
-     maxWidth: 310,
+      maxWidth: 310,
       minWidth:290,
+     
       },
 
       
@@ -72,10 +73,10 @@ function Pricing({
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
 
-<div  style={{ margin:"10px"}}>
+      <div  style={{ margin:"10px"}}>
                
                
-             <Card className={classes.root} elevation={3} >
+             <Card  data-aos="zoom-in-down" className={classes.root} elevation={3} >
                <CardHeader title={title_c} subheader={subheader_c}/>
                  <CardContent >
                      <Typography  variant="body2" color="textSecondary" component="p">

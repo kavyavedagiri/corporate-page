@@ -9,10 +9,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   dividerFullWidth: {
-  margin: `5px 0 15px 0px`,
+    
     backgroundColor:" rgb(240 9 81)",
     width: "80%",
-    
+    margin: `5px 10px 15px 0px;`,
+     [theme.breakpoints.down('md')]: {
+    margin: `5px 0px 15px 0px;`,
+    width: "100%",
+  },
   },
 }));
 
@@ -24,18 +28,19 @@ function Services() {
     id="pricingPg"
         className='home__mainf-section'> 
         
-        <div className='container'>
+        <div className='container' style={{overflow:"hidden"}}>
         <div class="headingf">Pricing</div>
-        <div
+          <div
                 data-aos="fade-left"
                 data-aos-offset="500"
                 data-aos-easing="ease-out-sine"
-                >
+                > 
                 <Divider className={classes.dividerFullWidth} />
-                </div>
+              
+                 </div>
           <div className='rowf home__mainf-colf'
-           data-aos="fade-up"
-           data-aos-anchor-placement="top-bottom"
+          //  data-aos="fade-up"
+          //  data-aos-anchor-placement="top-bottom"
             style={{
               display: 'flex',
               flexDirection: 'colf'}}>
@@ -47,7 +52,7 @@ function Services() {
         <Pricing {...card5} />  */}
         </div>
       </div>
-        </div>
+        </div> 
     </>
   );
 }

@@ -1,9 +1,8 @@
 import React from 'react';
 import './Testimonial.css';
-// import autoBind from "auto-bind"
-// import { MdKeyboardArrowRight,MdKeyboardArrowLeft } from 'react-icons/md';
+
 import { makeStyles } from '@material-ui/core/styles';
-// import Avatar from '@material-ui/core/Avatar';
+
 import {
       CardContent,
 
@@ -17,10 +16,7 @@ import {
 // import { ImQuotesLeft, ImQuotesRight} from 'react-icons/im';
 
 import  CardActionArea from '@material-ui/core/CardActionArea';
-//import CustomButtonGroupAsArrows from './CustomArrows'
 import Paper from '@material-ui/core/Paper';
-// import Carousel from 'react-multi-carousel';
-// import 'react-multi-carousel/lib/styles.css';
 import Divider from '@material-ui/core/Divider';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -30,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 290,
 
     minWidth: 150,
-    
+    maxHeight:320,
     justifyContent:'center',
     alignItems:"center",
     textAlign:"center",
@@ -43,11 +39,16 @@ const useStyles = makeStyles((theme) => ({
     justifyContent:'center',
   },
   dividerFullWidth: {
-    margin: `5px 5px 0px 20%`,
-    backgroundColor:" rgb(240 9 81)",
-    width:"80%"
     
+    backgroundColor:" rgb(240 9 81)",
+    width: "80%",
+    margin: `5px 10px 15px 60px;`,
+    [theme.breakpoints.down('md')]: {
+    margin: `5px 0px 15px 0px;`,
+    width: "100%",
   },
+  },
+
   expand: {
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
@@ -69,10 +70,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 const responsive = {
   0: { items: 1 },
-  500: { items: 1 },
-  868: { items: 1 },
-  1200: { items: 2 },
-  1824: { items: 3}
+  500: { items: 2 },
+  868: { items: 3 },
+  1100: { items: 3 },
+  1824: { items: 4}
 };
 
 
@@ -84,7 +85,7 @@ const items = [
     <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px" border-radius="100%"/>
           
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -102,7 +103,7 @@ const items = [
         <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px" border-radius="100%"/>
           
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -121,7 +122,7 @@ const items = [
         <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px" borderRadius="100%"/>
           
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -139,7 +140,7 @@ const items = [
         <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px" border-radius="100%"/>
           
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -158,7 +159,7 @@ const items = [
 <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px"/>
+      <img src="images/features/svg-7.svg" alt="title" width="80px" height="80px" border-radius="100%"/>
           
           <Typography className={classes.paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -177,26 +178,26 @@ const items = [
     <div>
        <div
     id="testimonialPg"
-        className='home__mainT-section darkBg'> 
+        className='home__mainT-section darkBg' style={{overflow:"hidden"}}> 
       
-        <div className='container'>
+        
         <div class="headingT">Testimonial</div>
         <div
                 data-aos="fade-left"
                 data-aos-offset="500"
                 data-aos-easing="ease-out-sine"
-                >
+                > 
                 <Divider className={classes.dividerFullWidth} />
-                </div>
-        <div>
-       
+                </div> 
+      
         <AliceCarousel
         mouseTracking
         infinite
         autoPlay
         autoPlayInterval={3000}
         animationDuration={3000}
-
+         paddingLeft={20}
+        paddingRight={20}
         disableButtonsControls
         items={items}
         responsive={responsive}
@@ -205,8 +206,8 @@ const items = [
 
 </div>
 </div>
-</div>
-   </div>
+
+   
   )
 }
 

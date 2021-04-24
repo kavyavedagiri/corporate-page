@@ -24,7 +24,7 @@ import './index.css'
 
 function App() {
 useEffect(()=>{
-  Aos.init({duration:2000});
+  Aos.init({duration:1000});
 },[]);
   return (
   <>
@@ -33,14 +33,14 @@ useEffect(()=>{
       <Navbar />
    </Router>
 <div class="outer">
-        <Router>
-     <Home/>    
-     <Features/>
-     <Testimonial/>    
-      <Pricing />  
+  <Router>
+    <Home/>
+     <Features/> 
+    <Testimonial/> 
+     <Pricing />   
     <ContactUs />
-     <Footer/>   
-      </Router>
+    <Footer/>   
+  </Router>
  <div class="box" id="one">
   <VedioSection/>
  </div> 

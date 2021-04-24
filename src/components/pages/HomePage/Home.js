@@ -7,11 +7,12 @@ import "aos/dist/aos.css";
 
 function Home() {
   return (
-    <div id="homePg">
+    <div  id="homePg">
+      <div className="mobile-home"></div>
       <MainSection {...homeObjOne} />
       <MainSection {...homeObjThree} />
       <MainSection {...homeObjTwo} />
-      
+    
     </div>
   );
 }

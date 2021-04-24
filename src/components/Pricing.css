@@ -1,24 +1,22 @@
-.home__mainf-section {
+.home__mainp-section {
   background-color: #f7f8fa;
   color:#1c2237;
   padding: 100px 10px 10px 10px;
 }
 
-.home__mainf-row {
+.home__mainp-row {
   align-items: center;
 }
 
-.rowf {
+.rowp {
   display: flex;
-  margin-right: -15px;
-  margin-bottom: 130px;
-  margin-left: -15px;
+  margin:20px;
   flex-wrap: wrap;
   align-content: stretch;
   justify-content: center;
 }
 
-.colf {
+.colp {
 margin-bottom: 15px;
 padding-right: 15px;
 padding-left: 15px;
@@ -27,7 +25,7 @@ max-width: 100%;
 /* flex-basis: 100%; */
 }
 
-.home__mainf-text-wrapper {
+.home__mainp-text-wrapper {
   max-width: 540px;
   min-width: 250px;
   padding-top: 0;
@@ -43,7 +41,7 @@ max-width: 100%;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-.headingf {
+.headingp {
   margin-bottom: 15px;
   margin-top: 30px;
   /* padding-bottom: 50px; */
@@ -59,7 +57,7 @@ max-width: 100%;
 .darkBg {
   background-color: #1c2237;
 }
-.home__mainf-subtitle {
+.home__mainp-subtitle {
   max-width: 80%;
   margin-bottom: 35px;
   font-size: 18px;
@@ -67,18 +65,18 @@ max-width: 100%;
 }
 
 @media screen and (max-width: 500px) {
-  .container {
-    padding-right: 100px;
+  .containerp {
+    padding-right: 30px;
     padding-left: 30px;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .home__mainf-text-wrapper {
+  .home__mainp-text-wrapper {
     padding-bottom: 65px;
   }
 
-  .colf {
+  .colp {
     max-width: 100%;
     flex-basis: 100%;
   }
