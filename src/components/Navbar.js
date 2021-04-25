@@ -1,4 +1,4 @@
-import React, { useState,useEffect,useRef } from 'react';
+import React, { useState,useEffect,useRef,useLayoutEffect } from 'react';
 
 import { Link } from 'react-scroll';
 import './Navbar.css';
@@ -33,6 +33,8 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [goingUp]);
 
+  
+
 
 
 
@@ -41,24 +43,21 @@ function Navbar() {
   const [click, setClick] = useState(false);
   // const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleClick = () => {
+    setClick(!click)
+    // Prevent scrolling on mount
+    document.body.style.overflow = "hidden";
+  };
+  const closeMobileMenu = () => {
+    setClick(false)
+    document.body.style.overflow = "auto";
+  
+  };
 
-  // const showButton = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
+ 
 
-//   useEffect(() => {
-//     showButton();
-//     window.addEventListener('resize', showButton);
-//     return {
-//     window.removeEventListener('resize', showButton)
-//     }
-//   }, []);
+
+
 
 
   return (
