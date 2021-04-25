@@ -1,15 +1,30 @@
 .navbar {
   background: #1c2237;
   height: 80px;
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  width:100%;
+  position: fixed;
+  top: -80px;
   z-index: 999;
-  display: block;
+  transition: top 1.5s;
+
+}
+.navbar-down {
+  background: #1c2237;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  width:100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  transition: top 1.5s;
+
 }
 
 .navbar-container {
@@ -21,7 +36,7 @@
 .container {
   z-index: 1;
   width: 100%;
-  /* max-width: 1600px; */
+ /* max-width: 1600px;  */
   /* margin-right: auto; */
   /* margin-left: auto; */
    padding-right: 30px; 

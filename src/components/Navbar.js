@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 
 import { Link } from 'react-scroll';
 import './Navbar.css';
@@ -7,6 +7,37 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
 function Navbar() {
+
+  const prevScrollY = useRef(0);
+
+  const [goingUp, setGoingUp] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+      if (prevScrollY.current >currentScrollY) {
+        
+        setGoingUp(true);
+
+      }else{
+      
+        setGoingUp(false);
+      }
+
+      prevScrollY.current = currentScrollY;
+      console.log(goingUp, currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [goingUp]);
+
+
+
+
+
+
   const [click, setClick] = useState(false);
   // const [button, setButton] = useState(true);
 
@@ -33,7 +64,7 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <nav className='navbar'>
+        <nav className={goingUp?'navbar':'navbar-down'}>
           <div className='navbar-container container'>
           <Link className='navbar-logo' onClick={closeMobileMenu} activeClass="active" to="homePg" spy={true} smooth={true} duration={1000}>
             {/* <Link to='about' className='navbar-logo' onClick={closeMobileMenu} href={"homePg"}> */}

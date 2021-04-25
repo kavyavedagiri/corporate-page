@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useEffect,useRef,useState} from 'react';
 import './App.css';
 import './sticky.css'
 import Home from './components/pages/HomePage/Home';
@@ -23,6 +23,33 @@ import './index.css'
 
 
 function App() {
+
+  const prevScrollY = useRef(0);
+
+  const [goingUp, setGoingUp] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+      if (prevScrollY.current >currentScrollY) {
+        
+        setGoingUp(true);
+
+      }else{
+      
+        setGoingUp(false);
+      }
+
+      prevScrollY.current = currentScrollY;
+      console.log(goingUp, currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [goingUp]);
+
+
 useEffect(()=>{
   Aos.init({duration:1000});
 },[]);
@@ -33,8 +60,8 @@ useEffect(()=>{
       <ScrollToTop/>
       <Navbar />
        </Router>
-      <div class="outer">
-      <div class="box" id="one">
+      <div className="outer">
+      <div className="box" id={goingUp?"one":"one-down"}>
       <VedioSection/>
       </div> 
       
