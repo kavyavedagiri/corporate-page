@@ -36,7 +36,7 @@ export default function Features() {
           <div class="headingf" style={{overflow:"hidden"}}>Features</div>
              <div
                 data-aos="fade-right"
-                data-aos-offset="500"
+                data-aos-offset="100"
                 data-aos-easing="ease-out-sine"
                 >  
                 <Divider className={classes.dividerFullWidth} />

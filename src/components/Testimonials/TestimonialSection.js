@@ -184,7 +184,7 @@ const items = [
         <div class="headingT">Testimonial</div>
         <div
                 data-aos="fade-left"
-                data-aos-offset="500"
+                data-aos-offset="100"
                 data-aos-easing="ease-out-sine"
                 > 
                 <Divider className={classes.dividerFullWidth} />

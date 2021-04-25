@@ -15,7 +15,7 @@ function VedioSection() {
 
     // const prevScrollY = useRef(0);
 
-    // const [goingUp, setGoingUp] = useState(false);
+    // 
   
     // useEffect(() => {
     //   const handleScroll = () => {

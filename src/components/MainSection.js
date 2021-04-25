@@ -52,7 +52,7 @@ function MainSection({
 
                 <div
                 data-aos="fade-right"
-                data-aos-offset="500"
+                data-aos-offset="80"
                 data-aos-easing="ease-out-sine"
                 >  
                 <Divider className={classes.dividerFullWidth} />

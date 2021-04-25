@@ -206,12 +206,9 @@ max-width: 100%;
   }
   }
   @media screen and (max-width: 764px) {
-    .mobile-home{
-
-      height: 35vh;
-    }
+  
     .home__main-section {
-     
+      padding: 130px 10px 20px 10px;
       justify-content: center;
       align-items: center;
     }

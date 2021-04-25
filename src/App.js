@@ -28,22 +28,24 @@ useEffect(()=>{
 },[]);
   return (
   <>
+
 <Router>
       <ScrollToTop/>
       <Navbar />
-   </Router>
-<div class="outer">
-  <Router>
-    <Home/>
-     <Features/> 
-    <Testimonial/> 
-     <Pricing />   
-    <ContactUs />
-    <Footer/>   
-  </Router>
- <div class="box" id="one">
-  <VedioSection/>
- </div> 
+       </Router>
+      <div class="outer">
+      <div class="box" id="one">
+      <VedioSection/>
+      </div> 
+      
+      <Router>
+        <Home/>
+        <Features/> 
+        <Testimonial/> 
+        <Pricing />   
+        <ContactUs />
+        <Footer/>   
+      </Router>    
 </div>
 
 
