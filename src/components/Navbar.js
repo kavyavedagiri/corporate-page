@@ -15,7 +15,7 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
     const currentScrollY = window.scrollY;
-      if (prevScrollY.current >currentScrollY) {
+      if (prevScrollY.current >=currentScrollY ) {
         
         setGoingUp(true);
 
@@ -64,7 +64,7 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <nav className={goingUp?'navbar':'navbar-down'}>
+        <nav className={goingUp?'navbar-down':'navbar'}>
           <div className='navbar-container container'>
           <Link className='navbar-logo' onClick={closeMobileMenu} activeClass="active" to="homePg" spy={true} smooth={true} duration={1000}>
             {/* <Link to='about' className='navbar-logo' onClick={closeMobileMenu} href={"homePg"}> */}

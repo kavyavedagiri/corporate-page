@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
     const currentScrollY = window.scrollY;
-      if (prevScrollY.current >currentScrollY) {
+      if (prevScrollY.current >=currentScrollY) {
         
         setGoingUp(true);
 
@@ -61,7 +61,7 @@ useEffect(()=>{
       <Navbar />
        </Router>
       <div className="outer">
-      <div className="box" id={goingUp?"one":"one-down"}>
+      <div className="box" id={goingUp?"one-down":"one"}>
       <VedioSection/>
       </div> 
       
