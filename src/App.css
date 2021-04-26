@@ -9,9 +9,9 @@
 }
 
 .box {
-  width:40.5%;
+  width:28.5%;
 
-  height: 40vh;
+  height: 99%;
   /* background: red; */
  
 }
@@ -34,15 +34,15 @@
   width: 100%;
   height: 100%;
   /* overflow: scroll; */
-  padding-left:40.5%;
+  padding-left:28.5%;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 700px) {
 
   .box {
     width:100%;
  
-    height: 40vh;
+    height: 100vh;
     /* background: red; */
     /* color: white; */
   }
@@ -71,7 +71,7 @@
   .box {
     width:100%;
  
-    height: 30vh;
+    height: 100vh;
   
   }
 }
