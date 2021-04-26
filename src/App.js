@@ -24,30 +24,57 @@ import './index.css'
 
 function App() {
 
+
+
   const prevScrollY = useRef(0);
 
   const [goingUp, setGoingUp] = useState(true);
-
+  const [width, setWidth]   = useState(window.innerWidth);
+  const [largeScreen,setLargeScreen] = useState(true)
   useEffect(() => {
+
+    const updateDimensions = () => {
+      setWidth(window.innerWidth);
+     
+    }
+   
+  // console.log("up"+goingUp+"ls"+largeScreen)
+ 
+
     const handleScroll = () => {
     const currentScrollY = window.scrollY;
-      if (prevScrollY.current >=currentScrollY) {
+
+      if (prevScrollY.current >=currentScrollY ) {
         
         setGoingUp(true);
-
-      }else{
+       
+      }else if(prevScrollY.current <currentScrollY ){
       
         setGoingUp(false);
       }
-
+      if(width>540){
+        setLargeScreen(true);
+        
+      }else{
+        setLargeScreen(false);
+      }
       prevScrollY.current = currentScrollY;
-      console.log(goingUp, currentScrollY);
+      // console.log(goingUp, currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", updateDimensions);
+   
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateDimensions);
+     
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [goingUp]);
+  }
+
+  }, [goingUp,largeScreen,width]);
+
+  
 
 
 useEffect(()=>{
@@ -61,7 +88,7 @@ useEffect(()=>{
       <Navbar />
        </Router>
       <div className="outer">
-      <div className="box" id={goingUp?"one-down":"one"}>
+      <div className="box" id={goingUp || largeScreen?"one-down":"one"}>
       <VedioSection/>
       </div> 
       

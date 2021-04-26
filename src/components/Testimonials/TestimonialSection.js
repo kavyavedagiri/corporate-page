@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
 const responsive = {
   0: { items: 1 },
   500: { items: 2 },
-  868: { items: 3 },
+  868: { items: 2 },
   1100: { items: 3 },
   1824: { items: 4}
 };
