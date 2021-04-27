@@ -37,12 +37,13 @@ function MainSection({
     <>
       <div 
         className={lightBg ? 'home__main-section' : 'home__main-section darkBg'}
-      >
+      > 
+       {/* */}
         <div   className='container' style={{overflow:"hidden"}}>
-            
+          
         
               
-                {/* <img src={img} alt={alt} className='home__main-img' /> */}
+              
            
             
           <div data-aos="zoom-in-down"
@@ -77,7 +78,9 @@ function MainSection({
             </div>
             
           </div>
+          
         </div>
+      
       </div>
     </>
   );

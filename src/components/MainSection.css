@@ -1,16 +1,23 @@
 
 .home__main-section {
   background-color: #ffffff;
-  /* background-image: url("../images/svg-2.svg");
-  filter: grayscale(100%);
-  opacity: 0.5; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;  */
+
   color: #B3B3B3;
   border-left: 1px solid #707070;
   padding: 120px 40px 0px 40px;
 
+}
+.home__main-section ::after {
+  content: "";
+  background: url("../../src/images/svg-1.svg");
+  background-repeat: no-repeat;
+  opacity: 0.015;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute; 
+  z-index: -1;   
 }
 .home__main-row {
   align-items: center;
@@ -80,7 +87,7 @@ max-width: 100%;
   
   .home__main-img {
     
-    position: absolute;
+    position: relative;
     max-width: 50%;
     margin-top: 0;
     margin-right: 30%;

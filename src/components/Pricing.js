@@ -32,30 +32,13 @@ const useStyles = makeStyles((theme) => ({
       
      
       },},
-      rootSpecial: {
-        maxWidth: 490,
-        minWidth:480,
-        backgroundColor:"#F2F2F2",
-        backgroundImage: "linear-gradient(45deg,#02A4DB 10% 12.7%,#333391 70% 75.7% ,#e91388  100% 57.38%)",
-         color:"#1c2237",
-        minHeight:300,
-       
-        borderRadius:"20px",
-        padding:"20px",
-        [theme.breakpoints.down('sm')]: {
-        maxWidth: 310,
-        minWidth:290,
-       
-       } },
 
-      
-    
     media: {
       height: 0,
       paddingTop: '50%', // 16:9
     },
     expand: {
-      color:"#FFFFFF",
+      color:"#000",
       transform: 'rotate(0deg)',
       marginLeft: 'auto',
       transition: theme.transitions.create('transform', {
@@ -63,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
       }),
     },
     expandOpen: {
-      color:"#FFFFFF",
+      color:"#000000",
       transform: 'rotate(180deg)',
     },
     subParagraph:{
@@ -81,8 +64,14 @@ const useStyles = makeStyles((theme) => ({
 
     priceHeading:{
     fontWeight:"bold",
-    fontSize:"30px"
+    fontSize:"30px",
     },
+
+    priceSubHeading:{
+      fontWeight:"bold",
+      fontSize:"22px",
+      paddingTop:"8px"
+      },
     freeTag:{
        backgroundColor:'#003399',
       color:"#ffffff",
@@ -92,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius:"50px",
       marginRight:"10px",
       fontWeight:"bold",
+      boxShadow:" 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
     },
     adsTag:{
        backgroundColor:'#009245',
@@ -102,11 +92,13 @@ const useStyles = makeStyles((theme) => ({
       borderRadius:"50px",
       color:"#ffffff",
       fontWeight:"bold",
+      boxShadow:" 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
     }
   
   }));
 function Pricing({
     title_c,
+    Subtitle_c,
     subheader_c,
     subheader2_c,
     paragraph1_c,
@@ -124,7 +116,7 @@ function Pricing({
   };
 
   return (
-    <IconContext.Provider value={{ color: '#fff', size: 64 }}>
+    <IconContext.Provider value={{ color: '#000000', size: 64 }}>
 
       <div  style={{ margin:"10px"}}>
                
@@ -132,7 +124,10 @@ function Pricing({
              <Card  data-aos="zoom-in-down" className={special?classes.rootSpecial:classes.root} elevation={9} >
               
                <div  className={classes.priceHeader} style={{display:'flex',justifyContent:'space-between'}}>
+                 <div style={{display:'flex'}}>
                  <div className={classes.priceHeading} >{title_c}</div>
+                 <div className={classes.priceSubHeading} >{Subtitle_c}</div>
+                </div>
                  <div style={{display:'flex'}}>
                  <div className={classes.freeTag}>Free</div>
                  <div className={classes.adsTag}>Ads</div>

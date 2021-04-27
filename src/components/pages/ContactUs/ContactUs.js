@@ -94,7 +94,7 @@ function ContactUs() {
                 <TextField
                   autoComplete="fname"
                   // name="firstName"
-                  variant="outlined"
+                  variant="standard"
                   required
                   fullWidth
                   // id="firstName"
@@ -104,7 +104,7 @@ function ContactUs() {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TextField
-                  variant="outlined"
+                  variant="standard"
                   required
                   fullWidth
                   // id="lastName"
@@ -115,7 +115,7 @@ function ContactUs() {
               </Grid>
               <Grid item xs={6}>
                 <TextField
-                  variant="outlined"
+                  variant="standard"
                   required
                   fullWidth
                   // id="email"
@@ -126,7 +126,7 @@ function ContactUs() {
               </Grid>
               <Grid item xs={6}>
                 <TextField
-                  variant="outlined"
+                  variant="standard"
                   required
                   fullWidth
                   // id="jobTitle"
@@ -137,7 +137,7 @@ function ContactUs() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
-                  variant="outlined"
+                  variant="standard"
                   required
                   fullWidth
                   // name="phoneNumber"
@@ -150,7 +150,7 @@ function ContactUs() {
               
               <Grid item xs={8}>
                 <TextField
-                  variant="outlined"
+                  variant="standard"
                   required
                   fullWidth
                   // id="companyName"
@@ -160,13 +160,13 @@ function ContactUs() {
                 /></Grid>
                   <Grid item xs={4}>
                   <TextField
-          // id="outlined-select-currency"
+          // id="standard-select-currency"
           select
           label="Select"
           value={currency}
           onChange={handleChange}
           helperText="Please select your company size"
-          variant="outlined"
+          variant="standard"
         >
           {companySize.map((option) => (
             <MenuItem key={option.value} value={option.value}>

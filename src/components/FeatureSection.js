@@ -14,9 +14,6 @@ const useStyles = makeStyles((theme) => ({
       minHeight:300,
       padding:9,
       borderRadius: "30px",
-      
-      
-     
       backgroundColor:"#cfd3e3",
       backgroundImage: "linear-gradient(45deg,#02A4DB 10% 12.7%,#333391 70% 75.7% ,#e91388  100% 57.38%);"
     },

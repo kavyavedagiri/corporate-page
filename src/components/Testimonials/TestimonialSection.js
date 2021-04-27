@@ -68,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: 'italic',
     fontSize:'12px'
   },
+
  
 }));
 const responsive = {
@@ -103,6 +104,7 @@ const items = [
   
   return (
     <div>
+     
        <div
     id="testimonialPg"
         className='home__mainT-section darkBg' style={{overflow:"hidden"}}> 
@@ -111,20 +113,21 @@ const items = [
         <div class="headingT">Testimonial</div>
        
       
-        <AliceCarousel
-        mouseTracking
-        infinite
-        autoPlay
-        autoPlayInterval={3000}
-        animationDuration={3000}
-         paddingLeft={20}
-        paddingRight={20}
-        disableButtonsControls
-        items={items}
-        responsive={responsive}
-        controlsStrategy="alternate"
-    />
+            <AliceCarousel
+            mouseTracking
+            infinite
+            autoPlay
+            autoPlayInterval={3000}
+            animationDuration={3000}
+            paddingLeft={20}
+            paddingRight={20}
+            disableButtonsControls
+            items={items}
+            responsive={responsive}
+            controlsStrategy="alternate"
+            />
 
+      
 </div>
 </div>
 
