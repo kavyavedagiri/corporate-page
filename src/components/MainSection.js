@@ -2,7 +2,7 @@ import React from 'react';
 import './MainSection.css';
 import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
-
+import { Button } from './Button';
 
 const useStyles = makeStyles((theme) => ({
  dividerFullWidth: {
@@ -39,6 +39,12 @@ function MainSection({
         className={lightBg ? 'home__main-section' : 'home__main-section darkBg'}
       >
         <div   className='container' style={{overflow:"hidden"}}>
+            
+        
+              
+                {/* <img src={img} alt={alt} className='home__main-img' /> */}
+           
+            
           <div data-aos="zoom-in-down"
             className='row home__main-row'
             style={{
@@ -48,16 +54,7 @@ function MainSection({
           >
             <div className='col'>
               <div className='home__main-text-wrapper'>
-                <div className='top-line'>{topLine}</div>
-
-                <div
-                data-aos="fade-right"
-                data-aos-offset="80"
-                data-aos-easing="ease-out-sine"
-                >  
-                <Divider className={classes.dividerFullWidth} />
-                </div>
-
+                {/* <div className='top-line'>{topLine}</div> */}
 
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
@@ -73,14 +70,12 @@ function MainSection({
                 >
                   {description}
                 </p>
-                
+                <Button buttonSize='btn--wide' buttonColor='primary'>
+                    {buttonLabel}
+                  </Button>
               </div>
             </div>
-            <div className='col'>
-              <div className='home__main-img-wrapper'>
-                <img src={img} alt={alt} className='home__main-img' />
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

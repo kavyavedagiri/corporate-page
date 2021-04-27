@@ -1,20 +1,21 @@
 .navbar {
-  background: #1c2237;
-  height: 80px;
+  background: #ffffff;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   width:100%;
   position: fixed;
-  top: -80px;
+  top: -70px;
   z-index: 999;
   transition: top 1.5s;
+  border-bottom: 1px solid #707070;
 
 }
 .navbar-down {
-  background: #1c2237;
-  height: 80px;
+  background: #ffffff;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,13 +25,14 @@
   top: 0px;
   z-index: 999;
   transition: top 1.5s;
+  border-bottom: 1px solid #707070;
 
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
 }
 
 .container {
@@ -44,7 +46,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: rgb(0, 0, 0);
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -69,22 +71,30 @@
 }
 
 .nav-item {
-  height: 80px;
- 
-  border-bottom: 2px solid transparent;
+  height: 75px;
+  padding-top: 5px;
+
 }
 
-.nav-item:hover {
-  border-bottom: 2px solid #f00946;
+.nav-links:hover {
+  /* border-bottom: 2px solid #f00946; */
+  background:#000033;
+  color:#F2F2F2
 }
 
 .nav-links {
-  color: #fff;
+  background: #F2F2F2;
+  border-radius: 30px;
+  color:#808080;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
+  padding: 1rem 1rem;
+  margin: 10px; 
+  height: 61%;
+  min-width: 130px;
 }
 
 .fa-bars {
@@ -115,14 +125,16 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-    background: #1c2237;
+    background:#F2F2F2;
+    border-radius: 0px;
+    margin: 0px;
     left: 0;
     opacity: 1;
     transition: all 0.6s ease;
@@ -133,19 +145,25 @@
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: table;
+    box-shadow: none;
+    border-radius: 0px;
+    margin: 0px; 
   }
 
   .nav-links:hover {
-    color: #f00946;
-    transform: scale(1.2);
+    background:#000033;
+  color:#F2F2F2;
+    
     transition: all 0.3s ease;
   }
 
   .nav-item:hover {
     border: none;
+    background:#000033;
+    color:#F2F2F2;
   }
 
   .nav-item {

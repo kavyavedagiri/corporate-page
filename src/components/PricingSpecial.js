@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
     }
   
   }));
-function Pricing({
+function PricingSpecial({
     title_c,
     subheader_c,
     subheader2_c,
@@ -129,7 +129,7 @@ function Pricing({
       <div  style={{ margin:"10px"}}>
                
                
-             <Card  data-aos="zoom-in-down" className={special?classes.rootSpecial:classes.root} elevation={9} >
+             <Card  data-aos="zoom-in-down" className={classes.rootSpecial} elevation={9} >
               
                <div  className={classes.priceHeader} style={{display:'flex',justifyContent:'space-between'}}>
                  <div className={classes.priceHeading} >{title_c}</div>
@@ -181,4 +181,4 @@ function Pricing({
     </IconContext.Provider>
   );
 }
-export default Pricing;
+export default PricingSpecial;

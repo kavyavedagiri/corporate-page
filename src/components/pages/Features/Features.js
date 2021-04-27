@@ -34,14 +34,7 @@ export default function Features() {
         <div className='containerf' style={{overflowX:"hidden"}}>
         
           <div class="headingf" style={{overflow:"hidden"}}>Features</div>
-             <div
-                data-aos="fade-right"
-                data-aos-offset="100"
-                data-aos-easing="ease-out-sine"
-                >  
-                <Divider className={classes.dividerFullWidth} />
-                </div>
-
+            
 
                       <div className='rowf home__mainf-colf'
                         style={{

@@ -93,7 +93,7 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: '#808080' }}>
         <nav className={goingUp || largeScreen ?'navbar-down':'navbar'}>
           <div className='navbar-container container'>
           <Link className='navbar-logo' onClick={closeMobileMenu} activeClass="active" to="homePg" spy={true} smooth={true} duration={1000}>

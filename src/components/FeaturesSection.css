@@ -1,7 +1,10 @@
 .home__mainf-section {
-  background-color: #f7f8fa;
+  background-color: #ffffff;
   color:#1c2237;
   padding: 80px 10px 10px 10px;
+  min-height: 100vh;
+  border-left: 1px solid #707070;
+ 
 }
 
 .home__mainpf-row {
@@ -55,7 +58,7 @@ max-width: 100%;
 }
 
 .darkBg {
-  background-color: #1c2237;
+  background-color: #ffffff;
 }
 .home__mainp-subtitle {
   max-width: 80%;

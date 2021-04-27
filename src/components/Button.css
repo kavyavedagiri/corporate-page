@@ -90,14 +90,15 @@
   }
   
   .primary {
-    background-color: #242424;
+    background-color: #003399;
     color: #fff;
     border: none;
+    border-radius: 30px;
   }
   
   .primary:hover {
     background-color: #fff;
-    color: #242424;
+    color: #003399;
     border: none;
   }
   

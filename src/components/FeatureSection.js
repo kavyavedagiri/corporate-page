@@ -9,19 +9,21 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 350,
-      minWidth: 290,
+      maxWidth: 320,
+      minWidth: 230,
       minHeight:300,
       padding:9,
-      justifyContent:'center',
-      alignItems:"center",
-      textAlign:"center",
-      backgroundColor:"#cfd3e3"
+      borderRadius: "30px",
+      
+      
+     
+      backgroundColor:"#cfd3e3",
+      backgroundImage: "linear-gradient(45deg,#02A4DB 10% 12.7%,#333391 70% 75.7% ,#e91388  100% 57.38%);"
     },
     media: {
       height: 0,
       paddingTop: '58.25%', // 16:9
-      justifyContent:'center',
+      
     },
     expand: {
       transform: 'rotate(0deg)',
@@ -35,9 +37,9 @@ const useStyles = makeStyles((theme) => ({
     },
     paragraph:{
       marginTop:10,
-      textAlign:"center",
-      color:"#1c2237",
-      fontStyle: 'italic',
+      
+      color:"#ffffff",
+      
       fontSize:'16px'
     }
     
@@ -59,11 +61,13 @@ function FeatureSection({
     <div  style={{ margin:"10px"}}>
                 
         
-      <Paper data-aos="zoom-in-down" className={classes.root} elevation={6} >
-      <CardActionArea>
+      <Paper data-aos="zoom-in-down" className={classes.root} elevation={10} >
+      <CardActionArea  className={classes.root}>
       <CardContent>   
+      <div>
       <img src="images/features/svg-7.svg" alt="title" width="150px" height="150px"/>
-        <Typography variant="h6" >{FeatureHeading}</Typography>
+      </div>
+        <Typography variant="h6"className={classes.paragraph} >{FeatureHeading}</Typography>
           <Typography className={classes.paragraph}>
            {FeatureInfo}
           </Typography>

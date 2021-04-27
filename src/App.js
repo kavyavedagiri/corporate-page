@@ -14,7 +14,6 @@ import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/pages/Footer.js/Footer';
 
 
-
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -82,24 +81,27 @@ useEffect(()=>{
 },[]);
   return (
   <>
-
+   
+ <ScrollToTop/>
 <Router>
-      <ScrollToTop/>
+
+     
       <Navbar />
        </Router>
       <div className="outer">
       <div className="box" id={goingUp || largeScreen?"one-down":"one"}>
       <VedioSection/>
       </div> 
+    
       
-      <Router>
         <Home/>
         <Features/> 
         <Testimonial/> 
         <Pricing />   
         <ContactUs />
         <Footer/>   
-      </Router>    
+    
+      
 </div>
 
 

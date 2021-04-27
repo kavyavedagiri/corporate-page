@@ -5,6 +5,7 @@ import {card1,card2,card3 } from './Data';
 import Pricing from '../../Pricing';
 import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
+import PricingSpecial from '../../PricingSpecial';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -30,14 +31,7 @@ function Services() {
         
         <div className='container' style={{overflow:"hidden"}}>
         <div class="headingf">Pricing</div>
-          <div
-                data-aos="fade-left"
-                data-aos-offset="100"
-                data-aos-easing="ease-out-sine"
-                > 
-                <Divider className={classes.dividerFullWidth} />
-              
-                 </div>
+         
           <div className='rowf home__mainf-colf'
           //  data-aos="fade-up"
           //  data-aos-anchor-placement="top-bottom"
@@ -46,7 +40,7 @@ function Services() {
               flexDirection: 'colf'}}>
         {/* <h1 className='pricing__heading'>Pricing</h1> */}
         <Pricing {...card1} /> 
-        <Pricing {...card2} /> 
+        <PricingSpecial {...card2} /> 
         <Pricing {...card3} /> 
         {/* <Pricing {...card4} /> 
         <Pricing {...card5} />  */}

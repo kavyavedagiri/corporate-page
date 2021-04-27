@@ -25,7 +25,7 @@
 }
 #one-down {
   position: fixed;
-  top: 80px;
+  top: 70px;
   left: 0px;
   transition: top 1.5s;
   /* background: blue; */
