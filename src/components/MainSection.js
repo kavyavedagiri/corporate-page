@@ -1,6 +1,6 @@
 import React from 'react';
 import './MainSection.css';
-import Divider from '@material-ui/core/Divider';
+
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from './Button';
 
@@ -31,7 +31,7 @@ function MainSection({
   alt,
   imgStart
 }) {
-  const classes = useStyles();
+ 
 
   return (
     <>

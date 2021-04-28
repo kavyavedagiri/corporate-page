@@ -95,7 +95,7 @@ function Navbar() {
           <Link className='navbar-logo' onClick={closeMobileMenu} activeClass="active" to="homePg" spy={true} smooth={true} duration={1000}>
             {/* <Link to='about' className='navbar-logo' onClick={closeMobileMenu} href={"homePg"}> */}
              {/* ----------------------------------insert your logo -------------------------------------------------*/}
-              <img src="images/ndots.svg" alt="logo" width="100" height="60"/>
+              <img src="images/ndot2.svg" alt="logo" width="100" height="60"/>
              </Link> 
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

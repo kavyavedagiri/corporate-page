@@ -1,17 +1,19 @@
 
 .home__main-section {
   background-color: #ffffff;
-
+ min-height: 100vh;
   color: #B3B3B3;
-  border-left: 1px solid #707070;
+  border-left: 1px solid #B2B2B2;
   padding: 120px 40px 0px 40px;
-  border-bottom:1px solid #707070;
+  border-bottom:1px solid #B2B2B2;
+ 
 }
 .home__main-section ::after {
   content: "";
   background: url("../../src/images/svg-1.svg");
   background-repeat: no-repeat;
-  opacity: 0.015;
+  background-position: center;
+  opacity: 0.012;
   top: 0;
   left: 0;
   bottom: 0;

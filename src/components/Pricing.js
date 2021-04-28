@@ -18,8 +18,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 490,
-      minWidth:480,
+      maxWidth: 580,
+      minWidth:550,
       backgroundColor:"#F2F2F2",
        color:"#1c2237",
       minHeight:300,
@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     subParagraph:{
       position:"relative",
       padding:"10px",
+      marginBottom:"10px",
       width:"70%"
     },
     button:{

@@ -4,13 +4,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 18px;
+  font-weight: bold;
   width:100%;
   position: fixed;
   top: -70px;
   z-index: 999;
   transition: top 0.5s;
-  border-bottom: 1px solid #707070;
+  border-bottom: 0.3px solid #B2B2B2;
 
 }
 .navbar-down {
@@ -19,13 +20,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 18px;
+  font-weight: bold;
   width:100%;
   position: fixed;
   top: 0px;
   z-index: 999;
   transition: top 0.5s;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #B2B2B2;
 
 }
 
@@ -54,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 26%;
 }
 
 .navbar-icon {
@@ -96,7 +98,7 @@
   padding: 1rem 1rem;
   margin: 10px; 
   height: 61%;
-  min-width: 130px;
+  min-width: 100px;
 }
 
 .fa-bars {
