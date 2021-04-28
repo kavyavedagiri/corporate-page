@@ -6,7 +6,7 @@ import { IconContext } from 'react-icons/lib';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
+
 
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
@@ -28,12 +28,12 @@ const useStyles = makeStyles((theme) => ({
        
         borderRadius:"20px",
         padding:"20px",
-        [theme.breakpoints.down('sm')]: {
-        maxWidth: 310,
-        minWidth:290,
-       
-       } },
-
+        [theme.breakpoints.down('md')]: {
+          maxWidth: 350,
+          minWidth:290,
+          
+         
+          },},
       
     
     media: {
@@ -85,6 +85,11 @@ const useStyles = makeStyles((theme) => ({
       marginRight:"10px",
       fontWeight:"bold",
       boxShadow:" 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
+      [theme.breakpoints.down('md')]: {
+    
+        margin:"15px 10px",
+       
+        },
     },
     
   
@@ -116,12 +121,12 @@ function PricingSpecial({
                
              <Card  data-aos="zoom-in-down" className={classes.rootSpecial} elevation={9} >
               
-               <div  className={classes.priceHeader} style={{display:'flex',justifyContent:'space-between'}}>
-               <div style={{display:'flex'}}>
+             <div  className={classes.priceHeader} style={{display:'flex',justifyContent:'space-between',flexWrap:"wrap"}}>
+             <div style={{display:'flex',flexWrap:"wrap"}}>
                  <div className={classes.priceHeading} >{title_c}</div>
                  <div className={classes.priceSubHeading} >{Subtitle_c}</div>
                 </div>
-                 <div style={{display:'flex'}}>
+                <div style={{display:'flex',flexWrap:"wrap"}}>
                  <div className={classes.freeTag}>{price}</div>
              
                  </div>

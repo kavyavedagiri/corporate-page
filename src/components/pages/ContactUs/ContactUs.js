@@ -16,26 +16,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
 
-import MenuItem from '@material-ui/core/MenuItem';
-
-const companySize = [
-  {
-    value: '0',
-    label: '0',
-  },
-  {
-    value: '1',
-    label: '1',
-  },
-  {
-    value: '2',
-    label: '2',
-  },
-  {
-    value: '3',
-    label: '3',
-  },
-];
 
 
 const useStyles = makeStyles((theme) => ({
@@ -57,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
       margin: theme.spacing(4),
       backgroundColor: "#1c2237",
+      elevation:9
     },
     form: {
       width: '100%', // Fix IE 11 issue.
@@ -71,11 +52,7 @@ const useStyles = makeStyles((theme) => ({
   
 function ContactUs() {
   const classes = useStyles();
-    const [currency, setCurrency] = React.useState('EUR');
-
-  const handleChange = (event) => {
-    setCurrency(event.target.value);
-  };
+   
   return (
     <div className='ContactUs-container' id="contactusPg"> 
       <section className='ContactUs-subscription'>
@@ -85,9 +62,9 @@ function ContactUs() {
           <Avatar className={classes.avatar}>
             <MailOutlineIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
+          <h1 >
             Contact Us
-          </Typography>
+          </h1>
           <form className={classes.form} noValidate>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
@@ -113,7 +90,7 @@ function ContactUs() {
                   autoComplete="lname"
                 />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12}>
                 <TextField
                   variant="standard"
                   required
@@ -124,21 +101,11 @@ function ContactUs() {
                   autoComplete="email"
                 />
               </Grid>
-              <Grid item xs={6}>
-                <TextField
-                  variant="standard"
-                  required
-                  fullWidth
-                  // id="jobTitle"
-                  label="Job Title"
-                  // name="jobTitle"
-                  autoComplete="job-title"
-                />
-              </Grid>
+              
               <Grid item xs={12}>
                 <TextField
                   variant="standard"
-                  required
+                  
                   fullWidth
                   // name="phoneNumber"
                   label="Phone Number"
@@ -148,32 +115,7 @@ function ContactUs() {
                 />
               </Grid>
               
-              <Grid item xs={8}>
-                <TextField
-                  variant="standard"
-                  required
-                  fullWidth
-                  // id="companyName"
-                  label="Company Name"
-                  // name="companyName"
-                  autoComplete="company-name"
-                /></Grid>
-                  <Grid item xs={4}>
-                  <TextField
-          // id="standard-select-currency"
-          select
-          label="Select"
-          value={currency}
-          onChange={handleChange}
-          helperText="Please select your company size"
-          variant="standard"
-        >
-          {companySize.map((option) => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
-        </TextField></Grid>
+          
                 
                   <Grid item xs={12}>
                   <TextField
@@ -183,7 +125,7 @@ function ContactUs() {
                     multiline
                     fullWidth
                     rows={4}
-                    variant="outlined"
+                    variant="standard"
                     /></Grid>
              
             </Grid>

@@ -4,10 +4,10 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'About',
-  headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+  headline: 'The Best way to create and share your idea is here. ',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu risus dui. Cras rhoncus consequat ex, eget vestibulum elit aliquam sit amet. Etiam et leo venenatis, tincidunt est id, sollicitudin lectus. Sed interdum scelerisque ullamcorper. Nulla nec ante commodo, placerat lacus at, tincidunt nibh. Curabitur feugiat massa malesuada massa elementum, sed vehicula ligula ornare. Maecenas scelerisque sapien massa, eget vestibulum quam congue nec. Vestibulum cursus diam at ligula eleifend porttitor. Donec iaculis magna in erat consequat auctor. ',
-  buttonLabel: 'Get Started',
+    'Have an idea? Have a storyboard? Have a prototype? We’ve got it covered. With nDots its seamless to create and share connected information using our unique 3D interface. Whether its a school assignment or your corporate project, nDots helps you improve your productivity in your workflows.  ',
+  buttonLabel: 'Create a free account',
   imgStart: '',
   img: 'images/svg-1.svg',
   alt: 'Credit Card',

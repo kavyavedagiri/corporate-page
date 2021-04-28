@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 320,
       minWidth: 230,
-      minHeight:300,
+      minHeight:480,
       padding:9,
       borderRadius: "30px",
       backgroundColor:"#cfd3e3",
@@ -38,6 +38,9 @@ const useStyles = makeStyles((theme) => ({
       color:"#ffffff",
       
       fontSize:'16px'
+    },
+    image:{
+      textAlign:"center"
     }
     
   }));
@@ -61,7 +64,7 @@ function FeatureSection({
       <Paper data-aos="zoom-in-down" className={classes.root} elevation={10} >
       <CardActionArea  className={classes.root}>
       <CardContent>   
-      <div>
+      <div className={classes.image}>
       <img src="images/features/svg-7.svg" alt="title" width="150px" height="150px"/>
       </div>
         <Typography variant="h6"className={classes.paragraph} >{FeatureHeading}</Typography>

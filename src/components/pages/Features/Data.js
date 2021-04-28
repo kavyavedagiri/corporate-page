@@ -1,7 +1,7 @@
 export const feature1 = {
   FeatureImage:"/images/features/svg-3.svg",
-  FeatureHeading:"consectetur adipisicing elit.consectetur adipisicing elit,",
-  FeatureInfo:"Lorem ipsum dolor sit amet, consecteturconsectetur adipisicing elit.consectetur adipisicing consectetur adipisicing elit.consectetur adipisicing elitelitconsectetur adipisicing elit.consectetur adipisicing elit adipisicing elit.consectetur adipisicing elit",
+  FeatureHeading:"Discover Hidden Relations",
+  FeatureInfo:"Enrich your learning experience by discovering breakthroughs and hidden relations in your idea which is impossible otherwise",
 
 }
 

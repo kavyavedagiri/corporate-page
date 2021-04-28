@@ -3,7 +3,7 @@
     title_c:"Creator",
     Subtitle_c:"(Basic)",
     paragraph1_c:"Basic includes:",
-    subParagraph1:"Created unlimited private dotsCreate upto 5 public dotsManage upto 5 groupsMake 10 search requests per day Upto 100 notes character",
+    subParagraph1:"Created unlimited private dotsCreate upto 5 public dots.Manage upto 5 groupsMake 10 search requests per day Upto 100 notes character",
     subParagraph1_c:"Unlimited boards",
   }
   export const card2={

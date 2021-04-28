@@ -4,7 +4,7 @@
   padding: 80px 10px 10px 10px;
   min-height: 100vh;
   border-left: 1px solid #707070;
- 
+  border-bottom:1px solid #707070;
 }
 
 .home__mainpf-row {

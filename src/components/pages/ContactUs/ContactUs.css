@@ -5,7 +5,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:rgba(4, 4, 26, 0.76)
+    color:rgba(4, 4, 26, 0.76);
+    border-left: 1px solid #707070;
+    border-bottom:1px solid #707070; 
+    min-height: 100vh;
   }
   
   .ContactUs-subscription {
@@ -17,6 +20,9 @@
     margin-bottom: 24px;
     padding: 24px;
    
+  }
+  .MuiFormLabel-root.Mui-focused{
+    color:#000 !important;
   }
   .MuiInput-underline:after {
     left: 0;

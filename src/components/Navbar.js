@@ -2,7 +2,7 @@ import React, { useState,useEffect,useRef } from 'react';
 
 import { Link } from 'react-scroll';
 import './Navbar.css';
-import { MdDashboard  } from 'react-icons/md';
+
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
@@ -98,8 +98,8 @@ function Navbar() {
           <div className='navbar-container container'>
           <Link className='navbar-logo' onClick={closeMobileMenu} activeClass="active" to="homePg" spy={true} smooth={true} duration={1000}>
             {/* <Link to='about' className='navbar-logo' onClick={closeMobileMenu} href={"homePg"}> */}
-              <MdDashboard className='navbar-icon' />
-              LOGO
+             {/* ----------------------------------insert your logo -------------------------------------------------*/}
+              <img src="images/ndots.svg" alt="logo" width="100" height="60"/>
              </Link> 
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
