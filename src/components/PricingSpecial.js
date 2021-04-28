@@ -17,31 +17,43 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
 const useStyles = makeStyles((theme) => ({
- 
-      rootSpecial: {
-        maxWidth: 580,
-        minWidth:550,
-        backgroundColor:"#F2F2F2",
-        backgroundImage: "linear-gradient(45deg,#02A4DB 10% 12.7%,#333391 70% 75.7% ,#e91388  100% 57.38%)",
-         color:"#ffffff",
-        minHeight:300,
-       
-        borderRadius:"20px",
-        padding:"20px",
+    root: {
+      maxWidth: 1000,
+      minWidth:880,
+      backgroundColor:"#F2F2F2",
+      backgroundImage:"linear-gradient(45deg,#02A4DB 10% 12.7%,#333391 70% 75.7% ,#e91388  100% 57.38%)",
+       color:"#fff",
+      minHeight:350,
+      
+      borderRadius:"20px",
+      padding:"40px",
+        [theme.breakpoints.up('xl')]: {
+          maxWidth: 1020,
+          minWidth:1000,
+          },
+        [theme.breakpoints.down('lg')]: {
+          maxWidth: 850,
+          minWidth:820,
+          },
         [theme.breakpoints.down('md')]: {
+          padding:"20px",
+          maxWidth: 650,
+          minWidth:550,
+        },
+        [theme.breakpoints.down('sm')]: {
+          padding:"20px",
           maxWidth: 350,
           minWidth:290,
-          
-         
-          },},
+        },
       
-    
+      },
+
     media: {
       height: 0,
       paddingTop: '50%', // 16:9
     },
     expand: {
-      color:"#FFFFFF",
+      color:"#fff",
       transform: 'rotate(0deg)',
       marginLeft: 'auto',
       transition: theme.transitions.create('transform', {
@@ -49,14 +61,21 @@ const useStyles = makeStyles((theme) => ({
       }),
     },
     expandOpen: {
-      color:"#FFFFFF",
+      color:"#fff",
       transform: 'rotate(180deg)',
     },
     subParagraph:{
       position:"relative",
       padding:"10px",
       marginBottom:"10px",
-      width:"70%"
+      width:"70%",
+      color:"#fff",
+
+      [theme.breakpoints.down('md')]: {
+      
+       width:"100%",
+     
+      },
     },
     button:{
       justifyContent:'center',
@@ -68,9 +87,9 @@ const useStyles = makeStyles((theme) => ({
 
     priceHeading:{
     fontWeight:"bold",
-    fontSize:"30px"
+    fontSize:"30px",
     },
-    
+
     priceSubHeading:{
       fontWeight:"bold",
       fontSize:"22px",
@@ -92,17 +111,35 @@ const useStyles = makeStyles((theme) => ({
        
         },
     },
+    adsTag:{
+       backgroundColor:'#009245',
     
+      padding:"10px 10px",
+      width:"70px",
+      textAlign:"center",
+      borderRadius:"50px",
+      color:"#ffffff",
+      fontWeight:"bold",
+      boxShadow:" 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
+      [theme.breakpoints.down('md')]: {
+    
+        margin:"15px 10px",
+       
+        },
+    }
   
   }));
 function PricingSpecial({
     title_c,
-    price,
     Subtitle_c,
-    subheader2_c,
+    price,
     paragraph1_c,
     subParagraph1_c,
     subParagraph1,
+    subParagraph2,
+    subParagraph3,
+    subParagraph4,
+    subParagraph5,
     tag,
     special
 
@@ -115,21 +152,21 @@ function PricingSpecial({
   };
 
   return (
-    <IconContext.Provider value={{ color: '#fff', size: 64 }}>
+    <IconContext.Provider value={{ color: '#000000', size: 64 }}>
 
       <div  style={{ margin:"10px"}}>
                
                
-             <Card  data-aos="zoom-in-down" className={classes.rootSpecial} elevation={9} >
+             <Card  data-aos="zoom-in-down" className={special?classes.rootSpecial:classes.root} elevation={9} >
               
-             <div  className={classes.priceHeader} style={{display:'flex',justifyContent:'space-between',flexWrap:"wrap"}}>
-             <div style={{display:'flex',flexWrap:"wrap"}}>
+               <div  className={classes.priceHeader} style={{display:'flex',justifyContent:'space-between',flexWrap:"wrap"}}>
+                 <div style={{display:'flex',flexWrap:"wrap"}}>
                  <div className={classes.priceHeading} >{title_c}</div>
                  <div className={classes.priceSubHeading} >{Subtitle_c}</div>
                 </div>
-                <div style={{display:'flex',flexWrap:"wrap"}}>
-                 <div className={classes.freeTag}>{price}</div>
-             
+                 <div style={{display:'flex',flexWrap:"wrap"}}>
+                 <div className={classes.freeTag}>$5.99/mo</div>
+                
                  </div>
                </div>
                <div>
@@ -140,7 +177,14 @@ function PricingSpecial({
                </div>
                  
                  <div className={classes.subParagraph}>
-                 {subParagraph1} 
+                 <ul style={{listStyleType:"none"}}>
+                    <li> {subParagraph1}</li>
+                    <li>{subParagraph2} </li>
+                    <li>{subParagraph3}</li>
+                    <li>{subParagraph4}</li>
+                     <li>{subParagraph5}</li>
+                  </ul>  
+                 
                  
                  </div>
                  <Button  buttonColor="primary" >

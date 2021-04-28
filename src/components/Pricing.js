@@ -18,20 +18,34 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 580,
-      minWidth:550,
+      maxWidth: 1000,
+      minWidth:880,
       backgroundColor:"#F2F2F2",
        color:"#1c2237",
-      minHeight:300,
+      minHeight:350,
       
       borderRadius:"20px",
-      padding:"20px",
-      [theme.breakpoints.down('md')]: {
-      maxWidth: 350,
-      minWidth:290,
+      padding:"40px",
+        [theme.breakpoints.up('xl')]: {
+          maxWidth: 1020,
+          minWidth:1000,
+          },
+        [theme.breakpoints.down('lg')]: {
+          maxWidth: 850,
+          minWidth:820,
+          },
+        [theme.breakpoints.down('md')]: {
+          padding:"20px",
+          maxWidth: 650,
+          minWidth:550,
+        },
+        [theme.breakpoints.down('sm')]: {
+          padding:"20px",
+          maxWidth: 350,
+          minWidth:290,
+        },
       
-     
-      },},
+      },
 
     media: {
       height: 0,
@@ -53,7 +67,14 @@ const useStyles = makeStyles((theme) => ({
       position:"relative",
       padding:"10px",
       marginBottom:"10px",
-      width:"70%"
+      width:"70%",
+      color:"#B3B3B3",
+
+      [theme.breakpoints.down('md')]: {
+      
+       width:"100%",
+     
+      },
     },
     button:{
       justifyContent:'center',
@@ -77,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
        backgroundColor:'#003399',
       color:"#ffffff",
       padding:"10px 10px",
-      width:"80px",
+      width:"100px",
       textAlign:"center",
       borderRadius:"50px",
       marginRight:"10px",
@@ -93,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
        backgroundColor:'#009245',
     
       padding:"10px 10px",
-      width:"50px",
+      width:"70px",
       textAlign:"center",
       borderRadius:"50px",
       color:"#ffffff",
@@ -110,11 +131,14 @@ const useStyles = makeStyles((theme) => ({
 function Pricing({
     title_c,
     Subtitle_c,
-    subheader_c,
-    subheader2_c,
+   
     paragraph1_c,
     subParagraph1_c,
     subParagraph1,
+    subParagraph2,
+    subParagraph3,
+    subParagraph4,
+    subParagraph5,
     tag,
     special
 
@@ -152,7 +176,14 @@ function Pricing({
                </div>
                  
                  <div className={classes.subParagraph}>
-                 {subParagraph1} 
+                 <ul style={{listStyleType:"none"}}>
+                    <li> {subParagraph1}</li>
+                    <li>{subParagraph2} </li>
+                    <li>{subParagraph3}</li>
+                    <li>{subParagraph4}</li>
+                     <li>{subParagraph5}</li>
+                  </ul>  
+                 
                  
                  </div>
                  <Button  buttonColor="primary" >
