@@ -63,15 +63,13 @@ function MainSection({
 
                
                 <p
-                  className={
-                    lightTextDesc
-                      ? 'home__main-subtitle'
-                      : 'home__main-subtitle dark'
-                  }
+                  className=  'home__main-subtitle'
+                     
+                  
                 >
                   {description}
                 </p>
-                <Button buttonSize='btn--wide' buttonColor='primary'>
+                <Button buttonSize='btn--medium' buttonColor='primary'>
                     {buttonLabel}
                   </Button>
               </div>

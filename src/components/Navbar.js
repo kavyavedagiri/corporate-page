@@ -12,10 +12,6 @@ function Navbar() {
 
   
 
-
-
-
-
   const prevScrollY = useRef(0);
 
   const [goingUp, setGoingUp] = useState(true);

@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: 'About',
   headline: 'The Best way to create and share your idea is here. ',
   description:
-    'Have an idea? Have a storyboard? Have a prototype? We’ve got it covered. With nDots its seamless to create and share connected information using our unique 3D interface. Whether its a school assignment or your corporate project, nDots helps you improve your productivity in your workflows.  ',
+    'Have an idea? Have a storyboard? Have a prototype? We’ve got it covered. With nDots its seamless to create and share connected information using our unique 3D interface. Whether its a school assignment or your corporate project, nDots helps you improve your productivity in your workflows.',
   buttonLabel: 'Create a free account',
   imgStart: '',
   img: 'images/svg-1.svg',

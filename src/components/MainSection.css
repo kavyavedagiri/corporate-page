@@ -58,7 +58,7 @@ max-width: 100%;
   .heading {
     margin-top: 10px;
     margin-bottom: 26px;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 1.1;
     font-weight: 550;
     color: #000000;
@@ -66,7 +66,7 @@ max-width: 100%;
   }
   
   .dark {
-    color: #000000;
+    color: #B3B3B3;
   }
   
   .darkBg {
@@ -76,7 +76,7 @@ max-width: 100%;
   .home__main-subtitle {
     max-width: 555px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
   }
   

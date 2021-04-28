@@ -9,7 +9,7 @@ function Home() {
   return (
     <div  id="homePg">
       {/* <div className="mobile-home"></div> */}
-      <MainSection style={{backgroundColor:"pink"}} {...homeObjOne} />
+      <MainSection  {...homeObjOne} />
       <MainSection {...homeObjThree} />
       <MainSection {...homeObjTwo} />
     
