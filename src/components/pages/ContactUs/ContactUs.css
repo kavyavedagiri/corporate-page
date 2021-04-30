@@ -10,7 +10,15 @@
     border-bottom:1px solid #B2B2B2; 
     min-height: 100vh;
   }
-  
+  .headingC {
+    margin-bottom: 15px;
+
+   
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 750;
+    color: rgba(4, 4, 26, 0.76);
+}
   .ContactUs-subscription {
     display: flex;
     flex-direction: column;

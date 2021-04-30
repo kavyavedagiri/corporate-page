@@ -1,7 +1,7 @@
 import React from 'react';
 import './Testimonial.css';
 
-
+import {test1,test2,test3,test4,test5} from './Data';
 import TestimonialItem from './TestimonialItem'
 
 import AliceCarousel from 'react-alice-carousel';
@@ -21,21 +21,21 @@ function TestimonialSection() {
 
 const items = [
   <div className="item" data-value="1">
-    <TestimonialItem/>
+    <TestimonialItem {...test1}/>
   </div>,
   <div className="item" data-value="2">
-   <TestimonialItem/>
+   <TestimonialItem {...test2}/>
   </div>,
 
   <div className="item" data-value="3">
-    <TestimonialItem/>
+    <TestimonialItem  {...test3}/>
   </div>,
   <div className="item" data-value="4">
-    <TestimonialItem/>
+    <TestimonialItem  {...test4}/>
   </div>,
 
   <div className="item" data-value="5">
-    <TestimonialItem/>
+    <TestimonialItem  {...test5}/>
   </div>,
 ];
   
@@ -47,7 +47,7 @@ const items = [
         className='home__mainT-section darkBg' style={{overflow:"hidden"}}> 
       
         
-        <div class="headingT">Testimonial</div>
+        <div class="headingf">Testimonial</div>
        
       
             <AliceCarousel

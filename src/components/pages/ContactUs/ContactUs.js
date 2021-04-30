@@ -62,9 +62,9 @@ function ContactUs() {
           <Avatar className={classes.avatar}>
             <MailOutlineIcon />
           </Avatar>
-          <h1 >
+          <div class="headingC">
             Contact Us
-          </h1>
+          </div>
           <form className={classes.form} noValidate>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>

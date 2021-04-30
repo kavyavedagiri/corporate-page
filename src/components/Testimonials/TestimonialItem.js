@@ -54,7 +54,16 @@ const useStyles = makeStyles((theme) => ({
       
       color:"#000",
       fontStyle: 'italic',
-      fontSize:'16px'
+      fontSize:'16px',
+      [theme.breakpoints.down('md')]: {
+        fontSize:'16px',
+        lineHeight:" 24px",
+       
+      },
+      [theme.breakpoints.down('sm')]: {
+        fontSize:'14px',
+        lineHeight:" 22px",
+      },
     },
     paragraph_name:{
         margin:10,
@@ -76,7 +85,10 @@ const useStyles = makeStyles((theme) => ({
       },
    
   }));
-function TestimonialItem() {
+function TestimonialItem({
+  Feedback,Fname,Fdesignation
+
+}) {
     const classes = useStyles();
     return (
         <div>
@@ -87,15 +99,13 @@ function TestimonialItem() {
    
       <ImQuotesLeft/>
           <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+          {Feedback}
           </div>
           <ImQuotesRight/>
             </CardContent>
           <CardContent className={classes.paragraph_name}>   
-          <div>Mark Woodbury</div>
-          <div className={classes.paragraph_designation}>Student</div>
+          <div>{Fname}</div>
+          <div className={classes.paragraph_designation}>{Fdesignation}</div>
           </CardContent>
         
          

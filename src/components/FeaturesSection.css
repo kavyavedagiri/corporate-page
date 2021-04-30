@@ -5,6 +5,7 @@
   min-height: 100vh;
   border-left: 1px solid #B2B2B2;
   border-bottom:1px solid #B2B2B2;
+  
 }
 
 .home__mainpf-row {
@@ -50,11 +51,12 @@ max-width: 100%;
   margin-left: 60px; 
   font-size: 30px;
   line-height: 1.1;
-  font-weight: 600;
-  color:#1c2237;
+  font-weight: 750;
+  color:rgba(4, 4, 26, 0.76);
+  
 }
 .dark {
-  color: #1c2237;
+  color: rgba(4, 4, 26, 0.76);
 }
 
 .darkBg {

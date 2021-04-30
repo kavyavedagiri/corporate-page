@@ -20,14 +20,14 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  transition: top 1.5s;
+  transition: top 0.3s;
   /* background: blue; */
 }
 #one-down {
   position: fixed;
   top: 70px;
   left: 0px;
-  transition: top 1.5s;
+  transition: top 0.3s;
   /* background: blue; */
 }
 .outer {
