@@ -67,10 +67,10 @@ function FeatureSection({
       <div className={classes.image}>
       <img src="images/features/svg-7.svg" alt="title" width="150px" height="150px"/>
       </div>
-        <Typography variant="h6"className={classes.paragraph} >{FeatureHeading}</Typography>
-          <Typography className={classes.paragraph}>
+        <div className={classes.paragraph} >{FeatureHeading}</div>
+          <div className={classes.paragraph}>
            {FeatureInfo}
-          </Typography>
+          </div>
           </CardContent>
           </CardActionArea>
     </Paper>

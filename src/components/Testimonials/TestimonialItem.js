@@ -52,14 +52,14 @@ const useStyles = makeStyles((theme) => ({
     paragraph_feedback:{
       margin:10,
       
-      color:"#1c2237",
+      color:"#000",
       fontStyle: 'italic',
-      fontSize:'12px'
+      fontSize:'16px'
     },
     paragraph_name:{
         margin:10,
         
-        color:"#1c2237",
+        color:"#000",
         
         fontSize:'12px',
         justifyContent:"center",
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
       paragraph_designation:{
         margin:10,
         
-        color:"#808080",
+        color:"#000",
         
         fontSize:'12px',
         justifyContent:"center",
@@ -86,16 +86,16 @@ function TestimonialItem() {
       <CardContent className={classes.paragraph_feedback}>   
    
       <ImQuotesLeft/>
-          <Typography>
+          <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-          </Typography>
+          </div>
           <ImQuotesRight/>
             </CardContent>
           <CardContent className={classes.paragraph_name}>   
-          <Typography>Mark Woodbury</Typography>
-          <Typography className={classes.paragraph_designation}>Student</Typography>
+          <div>Mark Woodbury</div>
+          <div className={classes.paragraph_designation}>Student</div>
           </CardContent>
         
          

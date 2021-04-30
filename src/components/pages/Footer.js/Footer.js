@@ -70,8 +70,7 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-            <MdDashboard className='navbar-icon' />
-              LOGO
+            <img src="images/ndot2.svg" alt="logo" width="100" height="60"/>
             </Link>
           </div>
           <small className='website-rights'>     <Copyright /></small>
