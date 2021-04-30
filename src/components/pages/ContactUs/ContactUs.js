@@ -36,18 +36,26 @@ const useStyles = makeStyles((theme) => ({
     },
     avatar: {
       margin: theme.spacing(4),
-      backgroundColor: "#1c2237",
-      elevation:9
+      backgroundColor: "#003399",
+      boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
     },
     form: {
       width: '100%', // Fix IE 11 issue.
       marginTop: theme.spacing(4),
     },
     submit: {
-      margin: theme.spacing(3, 0, 2),
-      
-      backgroundColor: "#1c2237",
+      margin: theme.spacing(8, 0, 2),
+      boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
+      backgroundColor: "#003399",
+      borderRadius:"30px",
+      color:"#fff",
+      '&:hover': {
+        backgroundColor: "#fff",
+        color:"#003399",
+      }
+
     },
+   
   }));
   
 function ContactUs() {
@@ -133,7 +141,7 @@ function ContactUs() {
               type="submit"
               fullWidth
               variant="contained"
-              color="primary"
+              
               className={classes.submit}
             >
               Contact Us
