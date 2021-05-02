@@ -12,6 +12,7 @@
   width:28.5%;
 
   height: 99%;
+  z-index: 9;
   /* background: red; */
  
 }
@@ -35,6 +36,7 @@
   height: 100%;
   /* overflow: scroll; */
   padding-left:28.5%;
+   
 }
 
 @media screen and (max-width: 700px) {

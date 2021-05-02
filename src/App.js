@@ -89,12 +89,12 @@ useEffect(()=>{
       <Navbar />
        </Router>
       <div className="outer">
-      <div className="box" id={goingUp || largeScreen?"one-down":"one"}>
+      <div className="box" id="one">
       <VedioSection/>
       </div> 
     
       
-        <Home/>
+        <Home/> 
         <Features/> 
         <Testimonial/> 
         <Pricing />   

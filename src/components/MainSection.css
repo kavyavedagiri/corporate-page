@@ -1,14 +1,19 @@
-
 .home__main-section {
-  background-color: #ffffff;
- min-height: 100vh;
-  color: #B3B3B3;
-  border-left: 1px solid #B2B2B2;
-  padding: 120px 40px 0px 40px;
-  border-bottom:1px solid #B2B2B2;
- 
+    background-color: #ffffff;
+    min-height: 100vh;
+    height: 100%;
+    color: #B3B3B3;
+    border-left: 1px solid #B2B2B2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: center;
+    /* width: 33%; */
+    padding: 40px 40px 40px 40px;
+    border-bottom: 1px solid #B2B2B2;
 }
-.home__main-section ::after {
+.home__main-row ::after {
   content: "";
   background: url("../../src/images/svg-1.svg");
   background-repeat: no-repeat;
@@ -18,8 +23,9 @@
   left: 0;
   bottom: 0;
   right: 0;
+  background-size:contain;
   position: absolute; 
-  z-index: -1;   
+  z-index: -99;   
 }
 .home__main-row {
   align-items: center;
