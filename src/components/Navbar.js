@@ -31,16 +31,12 @@ function Navbar() {
     const currentScrollY = window.scrollY;
 
       if (prevScrollY.current >=currentScrollY ) {
-        
         setGoingUp(true);
-       
       }else if(prevScrollY.current <currentScrollY ){
-      
-        setGoingUp(false);
+       setGoingUp(false);
       }
       if(width>540){
-        setLargeScreen(true);
-        
+        setLargeScreen(true);  
       }else{
         setLargeScreen(false);
       }
@@ -68,27 +64,45 @@ function Navbar() {
 
 
   const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true);
+ const [prevent, setPrevent] = useState(true);
 
   const handleClick = () => {
     setClick(!click)
-    // Prevent scrolling on mount
-    document.body.style.overflow = "hidden";
+    // preventScroll()
+    
   };
+  const preventScroll=()=>{
+    if(prevent===true){
+     document.body.style.overflow = "hidden";
+    console.log("yes")
+    }else if(prevent===false) {
+    document.body.style.overflow = "auto";
+    console.log("no")
+    }
+  }
+  
   const closeMobileMenu = () => {
     setClick(false)
-    document.body.style.overflow = "auto";
-  
+    setPrevent(false) 
+    preventScroll()
   };
 
- 
 
+const preventScrollClose=()=>{
+  
+ setPrevent(true) 
+   preventScroll()
 
+}
 
-
+const preventScrollBar=()=>{
+ setPrevent(false) 
+    preventScroll()
+ }
 
   return (
     <>
+    
       <IconContext.Provider value={{ color: '#808080' }}>
         <nav className={goingUp || largeScreen ?'navbar-down':'navbar'}>
           <div className='navbar-container container'>
@@ -97,10 +111,11 @@ function Navbar() {
              {/* ----------------------------------insert your logo -------------------------------------------------*/}
               <img src="images/ndot2.svg" alt="logo" width="100" height="60"/>
              </Link> 
-            <div className='menu-icon' onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+            <div className='menu-icon'  onClick={handleClick} >
+            
+              {click ? <div onClick={preventScrollClose}><FaTimes /></div> : <div onClick={preventScrollBar} > <FaBars /></div>}
             </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <ul className={click ? 'nav-menu active'  : 'nav-menu'}>
               <li className='nav-item'>
               <Link className='nav-links' onClick={closeMobileMenu} activeClass="active" to="homePg" spy={true} smooth={true} duration={1000}>
                 {/* <Link to='about' className='nav-links' onClick={closeMobileMenu}> */}

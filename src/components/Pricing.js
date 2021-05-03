@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom:"10px",
       width:"70%",
       color:"#B3B3B3",
-
+      fontWeight:500,
       [theme.breakpoints.down('md')]: {
       
        width:"100%",
@@ -93,12 +93,13 @@ const useStyles = makeStyles((theme) => ({
       fontWeight:"bold",
       fontSize:"22px",
       paddingTop:"8px"
+
       },
     freeTag:{
-       backgroundColor:'#003399',
+      backgroundColor:'#003399',
       color:"#ffffff",
       padding:"10px 10px",
-      width:"100px",
+      width:"70px",
       textAlign:"center",
       borderRadius:"50px",
       marginRight:"10px",
@@ -106,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
       boxShadow:" 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
       [theme.breakpoints.down('md')]: {
     
-        margin:"15px 10px",
+        margin:"15px 0px",
        
         },
     },
@@ -114,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
        backgroundColor:'#009245',
     
       padding:"10px 10px",
-      width:"70px",
+      width:"50px",
       textAlign:"center",
       borderRadius:"50px",
       color:"#ffffff",

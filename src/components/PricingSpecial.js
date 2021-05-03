@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom:"10px",
       width:"70%",
       color:"#fff",
-
+      fontWeight:500,
       [theme.breakpoints.down('md')]: {
       
        width:"100%",
@@ -99,34 +99,21 @@ const useStyles = makeStyles((theme) => ({
        backgroundColor:'#003399',
       color:"#ffffff",
       padding:"10px 10px",
-      width:"100px",
+      width:"110px",
       textAlign:"center",
       borderRadius:"50px",
       marginRight:"10px",
+      marginLeft:"10px",
       fontWeight:"bold",
       boxShadow:" 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
       [theme.breakpoints.down('md')]: {
     
-        margin:"15px 10px",
+        margin:"15px 0px",
        
         },
     },
-    adsTag:{
-       backgroundColor:'#009245',
     
-      padding:"10px 10px",
-      width:"70px",
-      textAlign:"center",
-      borderRadius:"50px",
-      color:"#ffffff",
-      fontWeight:"bold",
-      boxShadow:" 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10)",
-      [theme.breakpoints.down('md')]: {
     
-        margin:"15px 10px",
-       
-        },
-    }
   
   }));
 function PricingSpecial({

@@ -3,8 +3,8 @@
   color:#1c2237;
   padding: 80px 10px 10px 10px;
   min-height: 100vh;
-  border-left: 1px solid #B2B2B2;
-  border-bottom:1px solid #B2B2B2;
+  border-left: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   
 }
 
@@ -52,11 +52,11 @@ max-width: 100%;
   font-size: 30px;
   line-height: 1.1;
   font-weight: 750;
-  color:rgba(4, 4, 26, 0.76);
+  color:#000;
   
 }
 .dark {
-  color: rgba(4, 4, 26, 0.76);
+  color: #000;
 }
 
 .darkBg {
@@ -76,6 +76,9 @@ max-width: 100%;
   /* text-align: center; */
 }
 @media screen and (max-width: 500px) {
+  .home__mainf-section {
+    border:1px solid #e4e4e4
+  }
   .containerf {
     padding-right: 30px;
     padding-left: 30px;

@@ -86,13 +86,13 @@ useEffect(()=>{
 <Router>
 
      
-      <Navbar />
+      
        </Router>
       <div className="outer">
       <div className="box" id="one">
       <VedioSection/>
       </div> 
-    
+    <Navbar />
       
         <Home/> 
         <Features/> 

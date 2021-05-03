@@ -50,7 +50,8 @@ function MainSection({
             className='row home__main-row'
             style={{
               display: 'flex',
-              flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
+              flexDirection: imgStart === 'start' ? 'row-reverse' : 'row',
+              
             }}
           >
             <div className='col'>
@@ -69,7 +70,7 @@ function MainSection({
                 >
                   {description}
                 </p>
-                <Button buttonSize='btn--medium' buttonColor='primary'>
+                <Button buttonSize='btn--medium' buttonColor='primary' >
                     {buttonLabel}
                   </Button>
               </div>
