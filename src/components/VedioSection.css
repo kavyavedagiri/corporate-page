@@ -20,9 +20,7 @@
 
 
   
-  @media screen and (max-width: 1022px) {
-    
-  }
+ 
   .resp-iframe {
     position: absolute;
     top: 0;
@@ -37,8 +35,14 @@
   /* overflow: hidden; */
   width: 100%;
   height: 100%;
-   padding-top: 56.25%; 
+  padding-top: 56.25%;
 }
 .split-pane-active resp-iframe {
   pointer-events: none;
 }
+@media screen and (max-width:910px) {
+  .resp-iframe {
+    
+    padding-top: 70px;
+  }
+} 
