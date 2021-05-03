@@ -10,8 +10,8 @@
 
 .box {
   width:28.5%;
-
-  height: 99%;
+align-items: center;
+  height: 100%;
   z-index: 9;
   /* background: red; */
  
