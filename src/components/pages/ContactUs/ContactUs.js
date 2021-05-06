@@ -11,7 +11,7 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import Typography from '@material-ui/core/Typography';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
@@ -77,14 +77,14 @@ function ContactUs() {
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
-                  autoComplete="fname"
+                  // autoComplete="fname"
                   // name="firstName"
                   variant="standard"
                   required
                   fullWidth
                   // id="firstName"
                   label="First Name"
-                  autoFocus
+                 
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -95,7 +95,7 @@ function ContactUs() {
                   // id="lastName"
                   label="Last Name"
                   // name="lastName"
-                  autoComplete="lname"
+                  // autoComplete="lname"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -106,7 +106,7 @@ function ContactUs() {
                   // id="email"
                   label="Email Address"
                   // name="email"
-                  autoComplete="email"
+                  // autoComplete="email"
                 />
               </Grid>
               
@@ -119,7 +119,7 @@ function ContactUs() {
                   label="Phone Number"
                   
                   // id="phoneNumber"
-                  autoComplete="phone-number"
+                  // autoComplete="phone-number"
                 />
               </Grid>
               

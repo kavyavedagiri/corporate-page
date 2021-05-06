@@ -82,7 +82,7 @@ useEffect(()=>{
   return (
   <>
    
- <ScrollToTop/>
+ 
 <Router>
 
      
@@ -93,12 +93,12 @@ useEffect(()=>{
       <VedioSection/>
       </div> 
     <Navbar />
-      
+       <ScrollToTop/>
         <Home/> 
         <Features/> 
         <Testimonial/> 
         <Pricing />   
-        <ContactUs />
+         <ContactUs /> 
         <Footer/>   
     
       

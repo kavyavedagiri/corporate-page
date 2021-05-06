@@ -1,11 +1,16 @@
-
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter.var'), url(./fonts/Inter.ttf) format('truetype');
+}
   body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  font-family: 'Inter';
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
-code {
-  font-family: 'Inter', sans-serif;
-}
+/* code {
+  font-family: 'Inter';
+} */
