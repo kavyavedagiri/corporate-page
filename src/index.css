@@ -1,16 +1,23 @@
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Inter','Inter var experimental';
   src: local('Inter.var'), url(./fonts/Inter.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: oblique 0deg 10deg;
+  src: url("./fonts/Inter.var.woff2") format("woff2");
 }
   body {
   margin: 0;
-  font-family: 'Inter';
+  font-family: 'Inter','Inter var experimental';
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 
-/* code {
-  font-family: 'Inter';
-} */
+code {
+  font-family: 'Inter','Inter var experimental';
+} 
