@@ -3,6 +3,7 @@ name: Deploy React App
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:  # allows manual trigger
 
 permissions:
   contents: read
@@ -32,6 +33,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./build
+          name: github-pages-${{ github.run_id }}
 
   deploy:
     needs: build
@@ -40,4 +42,4 @@ jobs:
       name: github-pages
     steps:
       - name: Deploy
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
