@@ -2,7 +2,7 @@ name: Deploy React App
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:  # allows manual trigger
 
 permissions:
@@ -15,25 +15,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: "npm"  # optional, speeds up installs
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # faster and safer than npm install for CI
 
-      - name: Build
+      - name: Build React app
         run: npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v1  # v2 is deprecated; v1 is current
         with:
           path: ./build
-          name: github-pages-${{ github.run_id }}
 
   deploy:
     needs: build
@@ -41,5 +41,5 @@ jobs:
     environment:
       name: github-pages
     steps:
-      - name: Deploy
-        uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1  # v4 in your workflow works too
