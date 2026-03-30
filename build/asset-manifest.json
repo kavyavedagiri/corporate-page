@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f3f8821.chunk.css",
-    "main.js": "/static/js/main.b63ae12c.chunk.js",
-    "main.js.map": "/static/js/main.b63ae12c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.863c84d5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.863c84d5.js.map",
-    "static/css/2.ad814d5a.chunk.css": "/static/css/2.ad814d5a.chunk.css",
-    "static/js/2.f5115637.chunk.js": "/static/js/2.f5115637.chunk.js",
-    "static/js/2.f5115637.chunk.js.map": "/static/js/2.f5115637.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.ad814d5a.chunk.css.map": "/static/css/2.ad814d5a.chunk.css.map",
-    "static/css/main.7f3f8821.chunk.css.map": "/static/css/main.7f3f8821.chunk.css.map",
-    "static/js/2.f5115637.chunk.js.LICENSE.txt": "/static/js/2.f5115637.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/Inter.var.9df5db38.woff2",
-    "static/media/MainSection.css": "/static/media/svg-1.25c4a680.svg"
+    "main.css": "/corporate-page/static/css/main.0754af56.chunk.css",
+    "main.js": "/corporate-page/static/js/main.b63ae12c.chunk.js",
+    "main.js.map": "/corporate-page/static/js/main.b63ae12c.chunk.js.map",
+    "runtime-main.js": "/corporate-page/static/js/runtime-main.755f2721.js",
+    "runtime-main.js.map": "/corporate-page/static/js/runtime-main.755f2721.js.map",
+    "static/css/2.ad814d5a.chunk.css": "/corporate-page/static/css/2.ad814d5a.chunk.css",
+    "static/js/2.f5115637.chunk.js": "/corporate-page/static/js/2.f5115637.chunk.js",
+    "static/js/2.f5115637.chunk.js.map": "/corporate-page/static/js/2.f5115637.chunk.js.map",
+    "index.html": "/corporate-page/index.html",
+    "static/css/2.ad814d5a.chunk.css.map": "/corporate-page/static/css/2.ad814d5a.chunk.css.map",
+    "static/css/main.0754af56.chunk.css.map": "/corporate-page/static/css/main.0754af56.chunk.css.map",
+    "static/js/2.f5115637.chunk.js.LICENSE.txt": "/corporate-page/static/js/2.f5115637.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/corporate-page/static/media/Inter.var.9df5db38.woff2",
+    "static/media/MainSection.css": "/corporate-page/static/media/svg-1.25c4a680.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.863c84d5.js",
+    "static/js/runtime-main.755f2721.js",
     "static/css/2.ad814d5a.chunk.css",
     "static/js/2.f5115637.chunk.js",
-    "static/css/main.7f3f8821.chunk.css",
+    "static/css/main.0754af56.chunk.css",
     "static/js/main.b63ae12c.chunk.js"
   ]
 }
